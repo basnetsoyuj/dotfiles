@@ -7,7 +7,7 @@ setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
 
-HISTFILE=~/.cache/zsh/.histfile
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
 HISTSIZE=100000
 SAVEHIST=100000
 

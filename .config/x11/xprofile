@@ -10,6 +10,9 @@ remaps &		# run the remaps script, switching caps/esc and more; check it for mor
 
 autostart="xcompmgr"
 
+# for brightness
+sudo brightnessctl s 1%
+
 for program in $autostart; do
 	pidof -s "$program" || "$program" &
 done >/dev/null 2>&1
